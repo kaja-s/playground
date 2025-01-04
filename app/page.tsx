@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <div className="flex items-center justify-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <div className="flex gap-4 items-center flex-col sm:flex-row">
+      <div className="flex flex-col gap-8 items-center">
         <h1>Hello World</h1>
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
@@ -19,6 +19,12 @@ export default function Home() {
             duration: 0.4,
             scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
           }}
+          style={ball}
+        />
+
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
           style={ball}
         />
       </div>
