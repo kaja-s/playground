@@ -1,11 +1,23 @@
+"use client";
+
 import * as motion from "motion/react-client";
+import { useRef } from "react";
 
 export default function Home() {
+  const constraintsRef = useRef<HTMLDivElement>(null);
+
   const ball = {
     width: 100,
     height: 100,
-    backgroundColor: "#dd00ee",
+    backgroundColor: "#ff0088",
     borderRadius: 5,
+  };
+
+  const constraints = {
+    width: 300,
+    height: 300,
+    backgroundColor: "#FFB2DB",
+    borderRadius: 10,
   };
 
   return (
@@ -33,6 +45,15 @@ export default function Home() {
           animate={{ rotate: 360 }}
           transition={{ duration: 1 }}
         />
+
+        <motion.div ref={constraintsRef} style={constraints}>
+          <motion.div
+            drag
+            dragConstraints={constraintsRef}
+            dragElastic={0.2}
+            style={ball}
+          />
+        </motion.div>
       </div>
     </div>
   );
