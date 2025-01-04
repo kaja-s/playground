@@ -5,7 +5,7 @@ export default function Home() {
     width: 100,
     height: 100,
     backgroundColor: "#dd00ee",
-    borderRadius: "50%",
+    borderRadius: 5,
   };
 
   return (
@@ -26,6 +26,12 @@ export default function Home() {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
           style={ball}
+        />
+
+        <motion.div
+          style={ball}
+          animate={{ rotate: 360 }}
+          transition={{ duration: 1 }}
         />
       </div>
     </div>
