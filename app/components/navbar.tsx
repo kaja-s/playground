@@ -49,7 +49,7 @@ export function Navbar() {
           <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-gray-600"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-black"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? (
@@ -63,31 +63,25 @@ export function Navbar() {
 
         {/* Mobile menu */}
         <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
-              href="#home"
-              className="text-gray-900 hover:text-gray-600 block px-3 py-2 text-base font-medium"
+          <div className="pt-2 pb-3 space-y-1 sm:px-3">
+            <Link
+              href="/animation"
+              className="text-white hover:text-black block px-2 py-3 text-base font-medium"
             >
-              Home
-            </a>
-            <a
-              href="#services"
-              className="text-gray-900 hover:text-gray-600 block px-3 py-2 text-base font-medium"
+              Animation
+            </Link>
+            <Link
+              href="/blog-post"
+              className="text-white hover:text-black block px-2 py-3 text-base font-medium"
             >
-              Services
-            </a>
-            <a
-              href="#about"
-              className="text-gray-900 hover:text-gray-600 block px-3 py-2 text-base font-medium"
+              Blog post
+            </Link>
+            <Link
+              href="/test-3"
+              className="text-white hover:text-black block px-2 py-3 text-base font-medium"
             >
-              About us
-            </a>
-            <a
-              href="#contact"
-              className="text-gray-900 hover:text-gray-600 block px-3 py-2 text-base font-medium"
-            >
-              Contact
-            </a>
+              Test3
+            </Link>
           </div>
         </div>
       </div>
