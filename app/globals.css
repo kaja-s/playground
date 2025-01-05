@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --color-black: #101323;
-  --color-white: #fcfcfd;
-  --color-ctablue: #006eff;
+  --color-white: #fafafa;
+  --color-black: #231f20;
+  --color-beige: #f7efe9;
+
+  --color-red: #ff5757;
+  --color-blue: #77a4d4;
+  --color-yellow: #fbb040;
+  --color-pink: #ff85a5;
 
   --color-blue-100: #d5d7db;
   --color-blue-200: #abafb7;

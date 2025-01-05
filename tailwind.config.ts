@@ -13,6 +13,11 @@ export default {
 
         black: "var(--color-black)",
         white: "var(--color-white)",
+        beige: "var(--color-beige)",
+        red: "var(--color-red)",
+        blue: "var(--color-blue)",
+        yellow: "var(--color-yellow)",
+        pink: "var(--color-pink)",
 
         blue100: "var(--color-blue-100)",
         blue200: "var(--color-blue-200)",
