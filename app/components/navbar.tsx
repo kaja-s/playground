@@ -32,10 +32,10 @@ export function Navbar() {
               Animation
             </Link>
             <Link
-              href="/test-2"
+              href="/blog-post"
               className="text-white hover:text-black px-3 py-2 text-md font-bold"
             >
-              Test2
+              Blog post
             </Link>
             <Link
               href="/test-3"
