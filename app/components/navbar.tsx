@@ -29,7 +29,7 @@ export function Navbar() {
               href="/animation"
               className="text-white hover:text-black px-3 py-2 text-md font-bold"
             >
-              Animation
+              Animations
             </Link>
             <Link
               href="/blog-post"
@@ -68,7 +68,7 @@ export function Navbar() {
               href="/animation"
               className="text-white hover:text-black block px-2 py-3 text-base font-medium"
             >
-              Animation
+              Animations
             </Link>
             <Link
               href="/blog-post"

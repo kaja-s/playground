@@ -13,7 +13,7 @@ export default function Page() {
 
   const transition = { duration: 4, yoyo: Infinity, ease: "easeInOut" };
 
-  const ball = {
+  const box = {
     width: 100,
     height: 100,
     backgroundColor: "#77a4d4",
@@ -44,11 +44,11 @@ export default function Page() {
     borderRadius: "50%",
   };
 
-  const box: React.CSSProperties = {
+  const ball: React.CSSProperties = {
     width: 50,
     height: 50,
     backgroundColor: "#77a4d4",
-    borderRadius: 10,
+    borderRadius: 40,
     position: "absolute",
     top: 0,
     left: 0,
@@ -68,19 +68,19 @@ export default function Page() {
               duration: 0.4,
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
-            style={ball}
+            style={box}
           />
 
           <h1>Gestures (Click me)</h1>
           <motion.div
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.8 }}
-            style={ball}
+            style={box}
           />
 
           <h1>Rotate</h1>
           <motion.div
-            style={ball}
+            style={box}
             animate={{ rotate: 360 }}
             transition={{ duration: 1 }}
           />
@@ -91,7 +91,7 @@ export default function Page() {
               drag
               dragConstraints={constraintsRef}
               dragElastic={0.2}
-              style={ball}
+              style={box}
             />
           </motion.div>
 
@@ -127,7 +127,7 @@ export default function Page() {
               />
             </svg>
             <motion.div
-              style={box}
+              style={ball}
               initial={{ offsetDistance: "0%", scale: 2 }}
               animate={{ offsetDistance: "100%", scale: 1 }}
               transition={transition}
