@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Designers • Drag and Drop Landing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Meet Our Designers</h1>
+        <p>Drag cards to curate the lineup. Your order is saved locally.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="designers-section">
+        <div class="designers-grid" aria-label="Designers" role="list">
+          <div class="designer-card" role="listitem" draggable="true" data-id="d1" aria-grabbed="false">
+            <div class="card-header">
+              <div class="avatar" aria-hidden="true">JD</div>
+              <div class="identity">
+                <h3 class="name">Jane Doe</h3>
+                <p class="title">Senior Product Designer</p>
+              </div>
+            </div>
+            <p class="bio">Leads end-to-end product design with a focus on inclusive UX and measurable outcomes.</p>
+            <ul class="skills" aria-label="Skills">
+              <li>UX Strategy</li>
+              <li>Design Systems</li>
+              <li>Prototyping</li>
+            </ul>
+            <div class="links">
+              <a href="https://example.com/jane" target="_blank" rel="noopener">Portfolio</a>
+              <a href="mailto:jane@example.com">Email</a>
+            </div>
+          </div>
+
+          <div class="designer-card" role="listitem" draggable="true" data-id="d2" aria-grabbed="false">
+            <div class="card-header">
+              <div class="avatar" aria-hidden="true">AM</div>
+              <div class="identity">
+                <h3 class="name">Alex Martinez</h3>
+                <p class="title">Brand & Visual Designer</p>
+              </div>
+            </div>
+            <p class="bio">Creates expressive visual identities and marketing assets that scale across platforms.</p>
+            <ul class="skills" aria-label="Skills">
+              <li>Branding</li>
+              <li>Art Direction</li>
+              <li>Motion</li>
+            </ul>
+            <div class="links">
+              <a href="https://example.com/alex" target="_blank" rel="noopener">Portfolio</a>
+              <a href="mailto:alex@example.com">Email</a>
+            </div>
+          </div>
+
+          <div class="designer-card" role="listitem" draggable="true" data-id="d3" aria-grabbed="false">
+            <div class="card-header">
+              <div class="avatar" aria-hidden="true">KS</div>
+              <div class="identity">
+                <h3 class="name">Kai Sun</h3>
+                <p class="title">Interaction Designer</p>
+              </div>
+            </div>
+            <p class="bio">Designs silky-smooth interactions and micro-animations that clarify user intent.</p>
+            <ul class="skills" aria-label="Skills">
+              <li>Micro‑interactions</li>
+              <li>Prototyping</li>
+              <li>Accessibility</li>
+            </ul>
+            <div class="links">
+              <a href="https://example.com/kai" target="_blank" rel="noopener">Portfolio</a>
+              <a href="mailto:kai@example.com">Email</a>
+            </div>
+          </div>
+
+          <div class="designer-card" role="listitem" draggable="true" data-id="d4" aria-grabbed="false">
+            <div class="card-header">
+              <div class="avatar" aria-hidden="true">NP</div>
+              <div class="identity">
+                <h3 class="name">Nora Patel</h3>
+                <p class="title">UX Researcher</p>
+              </div>
+            </div>
+            <p class="bio">Turns research into clear direction, helping teams ship with confidence.</p>
+            <ul class="skills" aria-label="Skills">
+              <li>Qualitative</li>
+              <li>Quantitative</li>
+              <li>Testing</li>
+            </ul>
+            <div class="links">
+              <a href="https://example.com/nora" target="_blank" rel="noopener">Portfolio</a>
+              <a href="mailto:nora@example.com">Email</a>
+            </div>
+          </div>
+
+          <div class="designer-card" role="listitem" draggable="true" data-id="d5" aria-grabbed="false">
+            <div class="card-header">
+              <div class="avatar" aria-hidden="true">TR</div>
+              <div class="identity">
+                <h3 class="name">Theo Rivera</h3>
+                <p class="title">Design Engineer</p>
+              </div>
+            </div>
+            <p class="bio">Bridges design and code to deliver performant, accessible experiences.</p>
+            <ul class="skills" aria-label="Skills">
+              <li>Design Systems</li>
+              <li>Web</li>
+              <li>Accessibility</li>
+            </ul>
+            <div class="links">
+              <a href="https://example.com/theo" target="_blank" rel="noopener">Portfolio</a>
+              <a href="mailto:theo@example.com">Email</a>
+            </div>
+          </div>
+
+          <div class="designer-card" role="listitem" draggable="true" data-id="d6" aria-grabbed="false">
+            <div class="card-header">
+              <div class="avatar" aria-hidden="true">LB</div>
+              <div class="identity">
+                <h3 class="name">Lena Braun</h3>
+                <p class="title">Service Designer</p>
+              </div>
+            </div>
+            <p class="bio">Maps end‑to‑end journeys and identifies leverage points for change.</p>
+            <ul class="skills" aria-label="Skills">
+              <li>Journey Maps</li>
+              <li>Workshops</li>
+              <li>Operations</li>
+            </ul>
+            <div class="links">
+              <a href="https://example.com/lena" target="_blank" rel="noopener">Portfolio</a>
+              <a href="mailto:lena@example.com">Email</a>
+            </div>
+          </div>
+
+          <div class="designer-card" role="listitem" draggable="true" data-id="d7" aria-grabbed="false">
+            <div class="card-header">
+              <div class="avatar" aria-hidden="true">OW</div>
+              <div class="identity">
+                <h3 class="name">Owen Wu</h3>
+                <p class="title">3D & Motion Designer</p>
+              </div>
+            </div>
+            <p class="bio">Builds immersive motion and 3D visuals that bring products to life.</p>
+            <ul class="skills" aria-label="Skills">
+              <li>3D</li>
+              <li>Motion</li>
+              <li>Rendering</li>
+            </ul>
+            <div class="links">
+              <a href="https://example.com/owen" target="_blank" rel="noopener">Portfolio</a>
+              <a href="mailto:owen@example.com">Email</a>
+            </div>
+          </div>
+
+          <div class="designer-card" role="listitem" draggable="true" data-id="d8" aria-grabbed="false">
+            <div class="card-header">
+              <div class="avatar" aria-hidden="true">SB</div>
+              <div class="identity">
+                <h3 class="name">Sofia Becker</h3>
+                <p class="title">Content Designer</p>
+              </div>
+            </div>
+            <p class="bio">Crafts clear, outcome‑oriented content that guides users to success.</p>
+            <ul class="skills" aria-label="Skills">
+              <li>UX Writing</li>
+              <li>IA</li>
+              <li>Localization</li>
+            </ul>
+            <div class="links">
+              <a href="https://example.com/sofia" target="_blank" rel="noopener">Portfolio</a>
+              <a href="mailto:sofia@example.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>Built with ❤️ — Drag and drop to reorder</span>
+        <button type="button" class="reset-order" aria-label="Reset order">Reset order</button>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
